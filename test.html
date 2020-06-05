@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="errLogCollect.js"></script>
+    <script>
+        var tests = new errLogCollect({
+                productname: 'test', //产品名称
+                url: 'http://localhost:8416/test.php' //上报地址
+            });
+    </script>
+    <script src="https://cdn.staticfile.org/require.js/2.3.6/require.js"></script>
+    <script>
+        require(['/errLogCollect.js'], function (obj) {
+            console.log(obj);
+        });
+        try{
+            console.log(as);
+        }catch(e){
+
+        }
+        $.ajax({
+            url: 'http://localhost:8416/data',
+            dataType: 'jsonp',
+            success: (data) => {
+                console.log(data);
+            }
+        })
+    </script>
+    <script>
+        var ss = 'sss';
+        console.log(ss + gg);
+    </script>
+    <script src="test.js"></script>
+    <link rel="stylesheet" href="stest.css">
+    <img src="/images/jj.jpg" alt="">
+    <script src="/ss.js"></script>
+</body>
+</html>
