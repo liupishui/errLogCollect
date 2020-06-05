@@ -4,7 +4,7 @@
 * @Last Modified by:   liupishui
 * @Last Modified time: 2020-06-05 13:36:53
 */
-(function (global, factory) {
+;(function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
         typeof define === 'function' && define.amd ? define(factory) : (global = global || self, global.errLogCollect = factory());
 }(this, (function () {
