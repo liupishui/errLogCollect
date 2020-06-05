@@ -209,7 +209,6 @@
                 }
             }
             var errorMsg = [];
-            console.log(this.Errors);
             for (var item in this.Errors) {
                 errorMsg.push('[{"type":"' + this.Errors[item].type + '","jsErrorType":"' + this.Errors[item].jsErrorType + '","message":"' + this.Errors[item].message + '","col":"0","line":"0","filename":"' + this.Errors[item].filename + '"}]');
             };
