@@ -22,7 +22,7 @@ defaults={//默认上报信息和配置
     }
 ```
 
-##使用方法1
+## 使用方法1
 
 直接引入
 
@@ -36,7 +36,7 @@ defaults={//默认上报信息和配置
 </script>
 ```
 
-##使用方法2
+## 使用方法2
 
 using npm
 
@@ -44,7 +44,7 @@ using npm
 npm install errLogCollect --save
 ```
 
-##使用方法3
+## 使用方法3
 
 using require.js
 
@@ -60,7 +60,7 @@ using require.js
 </script>
 ```
 
-##php接收消息
+## php接收消息
 
 ```php
 
@@ -89,7 +89,7 @@ fclose($fs);
 
 ```
 
-#参考文档
+# 参考文档
 
     [https://zhuanlan.zhihu.com/p/32709628](https://zhuanlan.zhihu.com/p/32709628)
     [https://github.com/ecitlm/js-log-report](https://github.com/ecitlm/js-log-report)
