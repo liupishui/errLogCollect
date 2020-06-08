@@ -8,6 +8,8 @@ js错误上报：在window `beforeunload` 时，先进浏览器使用`navigator.
 
 默认上报信息，可以任意扩展，value为string格式
 
+只能上报执行代码后面的错误
+
 ```Javascript
 defaults={//默认上报信息和配置
         rate: 1,//上报率,可设置范围[0,1];//默认1，全部上报,0为不上报,0.3默认上报30%
