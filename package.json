@@ -1,6 +1,6 @@
 {
   "name": "errlogcollect",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "errlogcollect from broswer",
   "main": "/lib/errLogCollect.js",
   "scripts": {
