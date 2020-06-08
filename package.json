@@ -1,0 +1,32 @@
+{
+  "name": "errlogcollect",
+  "version": "1.0.0",
+  "description": "errlogcollect from broswer",
+  "main": "/lib/errLogCollect.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liupishui/errLogCollect.git"
+  },
+  "keywords": [
+    "errlog",
+    "broswer",
+    "Error",
+    "capture",
+    "ErrorLog",
+    "error",
+    "js",
+    "error",
+    "report",
+    "error",
+    "report"
+  ],
+  "author": "liupishui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liupishui/errLogCollect/issues"
+  },
+  "homepage": "https://github.com/liupishui/errLogCollect#readme"
+}
