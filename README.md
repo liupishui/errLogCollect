@@ -60,6 +60,29 @@ using require.js
     </script>
 ```
 
+##php接收消息
+
+```php
+
+    header('Content-Type: text/html;charset=utf-8');
+    header('Access-Control-Allow-Origin:*'); // *代表允许任何网址请求
+    header('Access-Control-Allow-Methods:POST,GET,OPTIONS,DELETE'); // 允许请求的类型
+    header('Access-Control-Allow-Credentials: true'); // 设置是否允许发送 cookies
+    header('Access-Control-Allow-Headers: Content-Type,Content-Length,Accept-Encoding,X-Requested-with, Origin');
+    $fs = fopen('test.txt','ab');
+    if(!empty($GLOBALS['_POST'])){
+        //接收navigator.sendBeacon
+        fwrite($fs,json_encode($GLOBALS['_POST'])."\r\n");
+    }else{
+        //接收xhr
+        fwrite($fs,json_encode($_POST)."\r\n");
+    };
+    fclose($fs);
+
+```
+
+接收到的一个demo`{"rate":"1","ua":"Mozilla\/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident\/6.0)","browser":"IE","os":"PC","osVersion":"other","errUrl":"http:\/\/localhost:3134\/test.html","host":"localhost:3134","time":"1591370987789","msg":"[{\"type\":\"resourceError\",\"jsErrorType\":\"script\",\"message\":\"<script src='test.js'><\/script>\",\"col\":\"0\",\"line\":\"0\",\"filename\":\"http:\/\/localhost:3134\/test.js\"}]|[{\"type\":\"resourceError\",\"jsErrorType\":\"img\",\"message\":\"<img alt='' src='\/images\/jj.jpg'>\",\"col\":\"0\",\"line\":\"0\",\"filename\":\"http:\/\/localhost:3134\/images\/jj.jpg\"}]|[{\"type\":\"resourceError\",\"jsErrorType\":\"script\",\"message\":\"<script src='\/ss.js'><\/script>\",\"col\":\"0\",\"line\":\"0\",\"filename\":\"http:\/\/localhost:3134\/ss.js\"}]|[{\"type\":\"runtimeErrors\",\"jsErrorType\":\"\u8bed\u6cd5\u9519\u8bef\",\"message\":\"\u8bed\u6cd5\u9519\u8bef\",\"col\":\"0\",\"line\":\"0\",\"filename\":\"http:\/\/localhost:3134\/test.html\"}]|[{\"type\":\"runtimeErrors\",\"jsErrorType\":\"\u201cgg\u201d\u672a\u5b9a\u4e49\",\"message\":\"\u201cgg\u201d\u672a\u5b9a\u4e49\",\"col\":\"0\",\"line\":\"0\",\"filename\":\"http:\/\/localhost:3134\/test.html\"}]","productname":"test","url":"http:\/\/localhost:8416\/test.php","renderTime":"120","v":"07281922533463457"}`
+
 #参考文档
 
     https://zhuanlan.zhihu.com/p/32709628[https://zhuanlan.zhihu.com/p/32709628]
