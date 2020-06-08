@@ -91,10 +91,6 @@ fclose($fs);
 
 # 参考文档
 
-    [https://zhuanlan.zhihu.com/p/32709628](https://zhuanlan.zhihu.com/p/32709628)
-    [https://github.com/ecitlm/js-log-report](https://github.com/ecitlm/js-log-report)
-    [https://www.jianshu.com/p/04e88271a8f2](https://www.jianshu.com/p/04e88271a8f2)
-    [https://www.cnblogs.com/yanze/p/5997489.html](https://www.cnblogs.com/yanze/p/5997489.html)
-    [https://www.jb51.net/article/124210.htm](https://www.jb51.net/article/124210.htm)
-    [https://www.jianshu.com/p/f3986ad5f8f6](https://www.jianshu.com/p/f3986ad5f8f6)
-    [https://github.com/BetterJS/badjs-report](https://github.com/BetterJS/badjs-report)
+    参考：[https://zhuanlan.zhihu.com/p/32709628](https://zhuanlan.zhihu.com/p/32709628)[https://github.com/ecitlm/js-log-report](https://github.com/ecitlm/js-log-report)[https://www.jianshu.com/p/04e88271a8f2](https://www.jianshu.com/p/04e88271a8f2)[https://www.cnblogs.com/yanze/p/5997489.html](https://www.cnblogs.com/yanze/p/5997489.html)[https://www.jb51.net/article/124210.htm](https://www.jb51.net/article/124210.htm)[https://www.jianshu.com/p/f3986ad5f8f6](https://www.jianshu.com/p/f3986ad5f8f6)[https://github.com/BetterJS/badjs-report](https://github.com/BetterJS/badjs-report)
+
+    
